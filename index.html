@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Train Time!</title>
+  <link rel="stylesheet" href="reset.css">
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container col-lg-6 col-md-6 col-sm-4">
+      <div class="row header">
+        <h1>Train Time</h1>
+      </div>
+      <div class="row header">
+          <h5>Chigga Chigga Choo Choo!</h5>
+      </div>
+      <div class="row header">
+          <h5 id="currentTime"></h5>
+      </div>
+      <div class="timeContainer">
+        <div class="head">Current Train Schedule</div>
+        <div class="currentTime">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+          
+                <tbody class="train-info-table">
+                </tbody>
+              </table>
+          </div>
+      </div>
+      <div class="addContainer">
+        <div class="head addTrain">Add Train</div>
+          <form>
+              <p>Train Name</p>
+              <input type="text" name="tName" id="tName" placeholder="Train Name">
+              <p>Train Destination</p>
+              <input type="text" name="tDest" id="tDest" placeholder="Train Destination">
+              <p>First Train Time (HH:MM)</p>
+              <input type="text" name="tTime" id="tTime" placeholder="First Train Time">
+              <p>Train Frequency (Minutes)</p>
+              <input type="number" name="tFreq" id="tFreq">
+              <button type="submit" name="tBtn" id="tBtn">Submit</button>
+          </form>
+      </div>
+
+  </div>
+
+  
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js' integrity='sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T' crossorigin='anonymous'></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

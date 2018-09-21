@@ -1,0 +1,45 @@
+html {
+  width: 100%;
+}
+body {
+  background-color: bisque;
+}
+.header {
+ justify-content: center;
+}
+.container {
+  display: grid;
+}
+div {
+  border-radius: 0.25rem;
+}
+form {
+  width: 100%;
+}
+input {
+  border-radius: 0.5rem;
+  margin-bottom: 0px;
+  width: 100%;
+}
+p {
+  margin: 0px;
+}
+button {
+  background-color: blue;
+  color: white;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.head {
+  background-color: blue;
+  opacity: 20%;
+  color: white;
+}
+.currentTime {
+  text-align: center;
+}
+th,
+td {
+  border: 2px gray dotted;
+  width: 100%;
+}
